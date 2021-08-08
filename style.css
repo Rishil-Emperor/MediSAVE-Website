@@ -31,7 +31,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #3c3a5a;
+    color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
@@ -39,7 +39,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #fff;
+    background: #3c3a5a;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -70,8 +70,47 @@ nav img{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
-    background: #3c3a5a;
+    font-size: 14px;
+    background: transparent;
     position: relative;
     cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #3c3a5a;
+    background: #3c3a5a;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #3c3a5a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
 }
