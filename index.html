@@ -13,14 +13,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <section class="header">
+        <section class="header" id="home">
             <nav>
                 <a href="index.html"><img src="images/MediSAVE_Logo.png"></img></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">LINKS</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#links">LINKS</a></li>
                         <li><a href="">ABOUT</a></li>
                         <li><a href="">CONTACT</a></li>
                     </ul>
@@ -35,26 +35,31 @@
         </div>
         </section>
 <!--Links-->
-        <section class="links">
-            <h1>Our Links:</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur apid</p>
-            
+
+        <section class="links" id="links">
+            <h1>Our Links!</h1>
+            <p>Links to our GoFundMe and social media pages.</p>
+
             <div class="row">
-                <div class="links-col">
-                    <h3>GoFundMe</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="links-col">
-                    <h3>Instagram</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="links-col">
-                    <h3>Facebook</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
+                <a href="https://www.gofundme.com/f/f5u4m-help-aaroosh-deliver-covid19-health-kits-to-india?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1">
+                    <div class="links-col-1">
+                        <h3>GoFundMe</h3>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/medi_save/">
+                    <div class="links-col-2">
+                        <h3>Instagram</h3>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/people/Medi-Save/100069635355096/?hc_ref=ARSNYkSyvhJS_kY6-KNI2VWmhWQqqZT-XWHSDNOqonvRlVZPB7x_3P4z-VyXEHj8v6U&fref=nf">
+                    <div class="links-col-3">
+                        <h3>Facebook</h3>
+                    </div>
+                </a>
             </div>
 
         </section>
+
 <!--JavaScript For Opening and Closing Menu-->
         <script>
             var navLinks = document.getElementById("navLinks")
